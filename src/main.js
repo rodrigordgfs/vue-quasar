@@ -13,12 +13,14 @@ import 'quasar/src/css/index.sass'
 // and placed in same folder as main.js
 import App from './App.vue'
 import router from './router'
+import { createPinia } from 'pinia'
 
-const myApp = createApp(App)
+const app = createApp(App)
 
-myApp.use(router)
+app.use(router)
+app.use(createPinia())
 
-myApp.use(Quasar, {
+app.use(Quasar, {
   plugins: {}, // import Quasar plugins and add here
   lang: quasarLang,
   /*
@@ -36,4 +38,4 @@ myApp.use(Quasar, {
 })
 
 // Assumes you have a <div id="app"></div> in your index.html
-myApp.mount('#app')
+app.mount('#app')

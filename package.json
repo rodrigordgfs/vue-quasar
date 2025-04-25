@@ -12,7 +12,8 @@
     "@quasar/extras": "^1.16.17",
     "quasar": "^2.18.1",
     "sass-embedded": "^1.80.2",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.9.0",

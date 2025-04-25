@@ -1,12 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <div class="q-pa-md q-gutter-sm">
-    <q-btn color="primary" text-color="white" label="Standard" />
-  </div>
+  <router-view />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

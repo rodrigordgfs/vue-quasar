@@ -11,6 +11,7 @@
   "dependencies": {
     "@quasar/extras": "^1.16.17",
     "axios": "^1.9.0",
+    "encrypt-storage": "^2.14.6",
     "pinia": "^3.0.2",
     "pinia-plugin-persistedstate": "^4.2.0",
     "quasar": "^2.18.1",

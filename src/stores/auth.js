@@ -1,6 +1,7 @@
 import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 import AuthService from "../services/auth";
+import { encryptedStorage } from "../plugins/encryptedStorage";
 
 export const useAuthStore = defineStore("auth", () => {
   const usuario = ref(null)
@@ -108,5 +109,7 @@ export const useAuthStore = defineStore("auth", () => {
     validarNivel
   };
 }, {
-  persist: true
+  persist: {
+    storage: encryptedStorage
+  }
 });
